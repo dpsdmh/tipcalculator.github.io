@@ -5,7 +5,7 @@ function calculateTip() {
     var numOfPeople = document.getElementById("peopleamt").value;
   
     //validate input
-    if (billAmt === "" || serviceQual == 0) {
+    if (billAmt === "" || serviceQual === "") {
       alert("Please enter values");
       return;
     }
@@ -18,14 +18,18 @@ function calculateTip() {
     }
   
     //Calculate tip
+    var amount=(billAmt*1)/numOfPeople;
     var total = (billAmt * serviceQual) / numOfPeople;
     //round to two decimal places
+    amount = Math.round(amount);
     total = Math.round(total * 1) / 100;
     //next line allows us to always have two digits after decimal point
+    amount=amount.toFixed(2)
     total = total.toFixed(2);
     //Display the tip
     document.getElementById("totalTip").style.display = "block";
     document.getElementById("tip").innerHTML = total;
+    document.getElementById("amt").innerHTML = amount;
   
   }
   
@@ -39,7 +43,7 @@ function calculateTip() {
   
   };
   document.getElementById("btn2").onclick = function(){
-    // document.getElementById("tip").innerHTML = 0;
+    
     document.getElementById("totalTip").style.display = "none";
     document.getElementById("each").style.display = "none";
   };
