@@ -149,12 +149,17 @@ button:active {
   padding: 5px;
   display: flex;
   
-  
-  
 }
 
 #totalTip:before {
-  content: "Tip amount";
+  content: " Amount";
+  font-size: 15px;
+  font-weight:lighter;
+  display: inline;
+}
+
+#amt::after{
+  content: " and Tip";
   font-size: 15px;
   font-weight:lighter;
   display: inline;
