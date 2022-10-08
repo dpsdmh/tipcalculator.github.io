@@ -21,8 +21,8 @@ function calculateTip() {
     var amount=(billAmt*1)/numOfPeople;
     var total = (billAmt * serviceQual) / numOfPeople;
     //round to two decimal places
-    amount = Math.round(amount);
-    total = Math.round(total * 1) / 100;
+    amount = Math.round(amount*100)/100;
+    total = Math.round(total * 100) / 10000;
     //next line allows us to always have two digits after decimal point
     amount=amount.toFixed(2)
     total = total.toFixed(2);
