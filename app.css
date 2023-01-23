@@ -1,12 +1,12 @@
 body {
   font-family: Verdana, Arial, Tahoma, Serif;
   background: #b0e1ea;
+  display: block;
   
 }
 
 #container {
-  display:block;
-  width: 35%;
+  width: fit-content;
   height: 60%;
   margin: auto;
   padding-bottom: 30px;
@@ -15,14 +15,33 @@ body {
   border-radius: 15px;
   
 }
+#subContainer{
+  margin: 10px;
+  padding: 10px;
+}
 
-h3 {
+h1 {
+  padding: 10px;
+  margin: auto;
+  background: rgb(8, 67, 87);
+  color: rgb(217, 224, 239);
+  text-align: center;
+  font-size: 26px;
+  font-weight: bolder;
+  border-radius: 15px 15px 0px 0px;
+  border-bottom: 7px solid rgb(11, 58, 73);
+  border-right: 7px solid rgb(11, 58, 73);
+
+}
+
+.h3 {
+  width: 80%;
   padding: 5px;
   background: rgb(23, 89, 111);
   color: rgb(255, 255, 255);
-  margin: 20px 20px 5px 20px;
+  margin: 5px 25px 5px 25px;
   text-align: center;
-  font-size: 18px;
+  font-size: 1.2rem;
   border-radius: 5px;
   border-bottom: 5px solid rgb(13, 61, 77);
   border-right: 5px solid rgb(13, 61, 77);
@@ -30,72 +49,30 @@ h3 {
   
 }
 
-h1 {
-  padding: 10px;
-  background: rgb(8, 67, 87);
-  color: rgb(217, 224, 239);
-  text-align: center;
-  font-size: 36px;
-  font-weight: bolder;
-  border-radius: 15px 15px 0px 0px;
-  border-bottom: 7px solid rgb(11, 58, 73);
-  border-right: 7px solid rgb(11, 58, 73);
-  
-
-}
-
-input {
-  margin: 5px 0px 0px 20px;
+.input {
+  width: 80%;
+  padding: 5px;
+  margin: 5px 25px 15px 25px;
   border: solid rgb(194, 190, 190) 1px;
   border-bottom: 3px solid rgb(13, 61, 77);
   border-right: 3px solid rgb(13, 61, 77);
-
-}
-
-#billamt {
-  font-size: 14px;
   color: rgb(17, 5, 63);
   background-color: #e5fafd;
-  width: 86.5%;
-  padding: 5px 5px 8px 8px;
+  font-size: .8rem;
 }
 
-#billamt:focus {
-  background: #fff;
-  border: 2px solid rgb(17, 5, 63);
-  border-bottom: 3px solid rgb(13, 61, 77);
-  border-right: 3px solid rgb(13, 61, 77);
-  outline: none;
-}
-
-#peopleamt {
-  width: 86.5%;
-  padding: 5px 5px 8px 8px;
-  margin-left: 20px;
-  color: rgb(17, 5, 63);
-  background-color: #e5fafd;
-  font-size: 14px;
-}
-
-#serviceQual {
-  width: 86.5%;
-  padding: 5px 5px 8px 8px;
-  margin-left: 20px;
-  margin-bottom: 20px;
-  color: rgb(17, 5, 63);
-  background-color: #e5fafd;
-  font-size: 14px;
-
+.btn{
+  width: auto;
 }
 
 button {
+  width: 60%;
+  height: 40px;
   font-weight: bold;
   display: block;
-  margin: 20px auto;
+  margin: 10px auto;
   background: #d71042;
   border-radius: 5px;
-  width: 200px;
-  height: 50px;
   font-size: 17px;
   color: white;
   border-top-color: #d71042;
@@ -124,8 +101,6 @@ button:active {
   margin: 20px auto -10px auto;
   background: #6969d6;
   border-radius: 5px;
-  width: 200px;
-  height: 50px;
   font-size: 17px;
   color: white;
   border-color: #6969d6;
@@ -140,38 +115,39 @@ button:active {
 }
 
 #totalTip {
-  margin: 0px 20px 0px 20px;
+  margin: 0px 25px 0px 25px;
   background-color: #c0e18b;
-  font-size: 15px;
+  font-size: .7rem;
   font-weight: bold;
   text-align: center;
   border-width: 5px;
   padding: 5px;
   display: flex;
   
+  
+  
 }
 
 #totalTip:before {
   content: " Amount";
-  font-size: 15px;
+  font-size: .7rem;
   font-weight:lighter;
   display: inline;
 }
-
 #amt::after{
   content: " and Tip";
-  font-size: 15px;
+  font-size: .7rem;
   font-weight:lighter;
   display: inline;
 }
 
 #totalTip sup {
-  font-size: 15px;
+  font-size: .7rem;
 
 }
 
 #totalTip small {
-  font-size: 15px;
+  font-size: .7rem;
   font-weight: lighter;
   display: inline;
 }
