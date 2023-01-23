@@ -12,31 +12,29 @@
 <body>
     <div id="container">
         <h1>Tip Calculator</h1>
-        <div id="calculator">
 
+        <div id="subContainer"></div>
+        <h3 class="h3">Total Bill</h3>
+        <input class="input" id="billamt" type="number" placeholder="Bill amount Rs.(in Rupee)">
+        <h3 class="h3">Total Number Of People</h3>
+        <input class="input" id="peopleamt" type="number" placeholder="Number of People">
+        <h3 class="h3"> Sharing(%)</h3>
+        <input class="input" id="serviceQual" type="number" placeholder="How much tip you want to give(%)">
 
-            <form>
-                <h3>Total Bill</h3>
-                <input id="billamt" type="number" placeholder="Bill amount Rs.(in Rupee)">
+        <div id="totalTip">
+            <b>Rs. </b><span id="amt">0.00</span>
+            <b>Rs. </b><span id="tip">0.00</span>
+            <small id="each">each</small>
+        </div>
+        <div class="btn">
+            <button type="button" id="calculate">Calculate</button>
 
-                <h3>Total Number Of People</h3>
-                <input id="peopleamt" type="number" placeholder="Number of People">
-                <h3> Sharing(%)</h3>
-                <input id="serviceQual" type="number" placeholder="How much tip you want to give(%)">
-
-                <div id="totalTip">
-                    <b>Rs.  </b><span id="amt">0.00</span>
-                    <b>Rs.  </b><span id="tip">0.00</span>
-                    <small id="each">each</small>
-                </div>
-
-                <button type="button" id="calculate">Calculate!</button>
-
-                <button id="btn2" type="reset">Reset</button>
+            <button id="btn2" type="reset">Reset</button>
         </div>
     </div>
-        </form>
-     
+    </div>
+
+
 
     <script type="text/javascript" src="app.js"></script>
 </body>
