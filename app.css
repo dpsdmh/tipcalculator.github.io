@@ -8,7 +8,7 @@ body {
 #container {
   width: fit-content;
   height: 60%;
-  margin: auto;
+  margin: 30px auto;
   padding-bottom: 30px;
   background: #f7f7f7;
   box-shadow: 0 0 3px rgba(229, 45, 45, 0.1);
